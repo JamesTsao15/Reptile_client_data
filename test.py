@@ -1,0 +1,12 @@
+import  xlwt
+workbook=xlwt.Workbook(encoding='ascii')
+worksheet=workbook.add_sheet("工作表一")
+worksheet.write(0,0,"公司名稱")
+worksheet.write(0,1,"公司類別")
+worksheet.write(0,2,"公司說明")
+worksheet.write(0,3,"員工數量")
+worksheet.write(0,4,"資本額")
+worksheet.write(0,5,"公司電話")
+worksheet.write(0,6,"公司地址")
+worksheet.write(0,7,"公司網站")
+workbook.save('客戶資料.xls')
